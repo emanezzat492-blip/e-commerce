@@ -399,7 +399,7 @@ font-weight: bold;
   top: 50%;
   transform: translateY(-50%);
  background-color: white;
-  color: white;
+  color: rgb(71, 70, 70);
   border: none;
   width: 40px;
   height: 40px;
@@ -434,3 +434,35 @@ transition:0.5s;
 .paragraph:hover{
   text-decoration: underline;
 }
+
+/* Image Gallery Styles */
+
+.gallery-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+   margin-bottom: 40px;
+
+}
+.gallery-container {
+  display: flex;
+  gap:19px;
+  padding: 10px 0;
+  width: 100%;
+   overflow-x:auto;
+  scroll-behavior:smooth;
+   justify-content:flex-start;
+}
+
+.gallery-item {
+position: relative;
+  flex: 0 0 23%;
+  text-align: center;
+ z-index:400;
+ 
+}
+.gallery-img:hover{
+  transition: all , 0.4s;
+  scale: 1.1;
+}
+
